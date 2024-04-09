@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import AppRouter from './components/Router';
 
 function App() {
+  const backgroundImageUrl =
+  'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Frandom&psig=AOvVaw1QlDMSPPI5D5Drsx2iTCrU&ust=1707049107158000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLD1svKVj4QDFQAAAAAdAAAAABAE';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AppRouter />
     </div>
   );
 }
